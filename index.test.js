@@ -91,7 +91,12 @@ describe('[Exercise 5] Seasons', () => {
     seasons.next();
     expect(seasons.next()).toEqual('winter');
   });
-  // test('[12] the FOURTH call of seasons.next returns "spring"', () => {})
+  test('[12] the FOURTH call of seasons.next returns "spring"', () => {
+    seasons.next();
+    seasons.next();
+    seasons.next();
+    expect(seasons.next()).toEqual('spring');
+  });
   // test('[13] the FIFTH call of seasons.next returns again "summer"', () => {})
   // test('[14] the 40th call of seasons.next returns "spring"', () => {})
 })
