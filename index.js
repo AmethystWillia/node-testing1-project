@@ -25,7 +25,13 @@ function trimProperties(obj) {
  * trimPropertiesMutation({ name: '  jane  ' }) // returns the object mutated in place { name: 'jane' }
  */
 function trimPropertiesMutation(obj) {
-  // ✨ implement
+  const copy = {
+    ...obj
+  };
+
+  Object.keys(copy).forEach(key => copy[key] = copy[key].trim());
+
+  return copy;
 }
 
 /**
