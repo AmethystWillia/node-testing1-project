@@ -7,7 +7,13 @@
  * trimProperties({ name: '  jane  ' }) // returns a new object { name: 'jane' }
  */
 function trimProperties(obj) {
-  // ✨ implement
+  const copy = {
+    ...obj
+  };
+
+  Object.keys(copy).forEach(key => copy[key] = copy[key].trim());
+
+  return copy;
 }
 
 /**
