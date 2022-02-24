@@ -104,6 +104,9 @@ class Seasons {
    * seasons.next() // returns "summer"
    */
   next() {
+    if (this.current > 3) {
+      this.current = 0;
+    }
     const selected = this.seasons[this.current];
     this.current++
 
