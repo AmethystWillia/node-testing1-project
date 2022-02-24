@@ -134,7 +134,13 @@ describe('[Exercise 6] Car', () => {
     expect(actual).toEqual(expected);
   });
 
-  // test('[16] driving the car uses gas', () => {});
+  test('[16] driving the car uses gas', () => {
+    const expected = 18;
+
+    focus.drive(80);
+
+    expect(focus.tank).toEqual(expected);
+  });
 
   // test('[17] refueling allows to keep driving', () => {});
 
