@@ -141,8 +141,10 @@ class Car {
    * focus.drive(200) // returns 600 (ran out of gas after 100 miles)
    */
   drive(distance) {
-    // ✨ implement
-  }
+    this.odometer += distance;
+
+    return this.odometer;
+  };
 
   /**
    * [Exercise 6C] Adds gallons to the tank
