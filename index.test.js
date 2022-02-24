@@ -137,7 +137,7 @@ describe('[Exercise 6] Car', () => {
   test('[16] driving the car uses gas', () => {
     const expected = 18;
 
-    focus.drive(80);
+    focus.drive(60);
 
     expect(focus.tank).toEqual(expected);
   });

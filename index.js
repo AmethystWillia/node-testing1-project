@@ -142,6 +142,7 @@ class Car {
    */
   drive(distance) {
     this.odometer += distance;
+    this.tank = (this.tank - (distance/this.mileage));
 
     return this.odometer;
   };
